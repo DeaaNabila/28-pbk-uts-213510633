@@ -1,0 +1,88 @@
+:root {
+  --color-background: #f5dada;
+  --color-main: #df2d5c;
+
+  --font-size-extra-large: 50px;
+  --font-size-large: 30px;
+  --font-size-medium: 20px;
+
+  --global-radius: 25px;
+  --global-margin: 15px;
+  --side-margin: 10px;
+
+  --max-width: 800px;
+  --min-width: 500px;
+  --common-width: 100%;
+}
+
+* {
+  color: rgb(128, 15, 15);
+  font-family: Helvetica;
+  border: 0;
+  padding: 0;
+  margin: 0;
+  background-color: var(--color-background);
+  user-select: none;
+}
+
+up {
+  height: 100px;
+}
+
+h1 {
+  font-size: var(--font-size-extra-large);
+  font-weight: bold;
+}
+
+input {
+  border: none;
+  outline: none;
+  font-size: var(--font-size-medium);
+  background-color: rgb(253, 178, 191);
+  width: 100%;
+}
+
+button {
+  border: none;
+  font-size: var(--font-size-medium);
+  background-color: inherit;
+  color: #fcd3f5;
+}
+
+.listItem {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  background-color: var(--color-main);
+  margin: var(--global-margin) var(--side-margin);
+}
+
+#todoList, #todoInput {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: stretch;
+  background-color: var(--color-main);
+  border-radius: var(--global-radius);
+  padding: var(--global-margin);
+  margin-top: var(--global-margin);
+  margin-bottom: var(--global-margin);
+}
+
+
+.todoName, .todoNameDone {
+  font-size: var(--font-size-medium);
+  background-color: inherit;
+}
+
+.todoNameDone {
+  text-decoration: line-through;
+}
+
+#app {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
